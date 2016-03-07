@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0-*",
+  "description": "SomeDnxProject.MsTest MsTest Project for SomeDnxProject",
+  "authors": [ "danny" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+  "dependencies": {
+    "MSTest.UnitTestFramework": "1.0.0-alpha7",
+    "MSTest.Runner.Dnx": "1.0.0-rc1",
+    "SomeDnxProject": "1.0.0-*"
+  },
+
+  "commands": {
+    "test": "MSTest.Runner.Dnx /resultsfile:testResults.trx"
+  },
+
+  "frameworks": {
+    "dnx451": { },
+    "dnxcore50": {
+      "dependencies": {
+        "Microsoft.CSharp": "4.0.1-beta-23516",
+        "System.Collections": "4.0.11-beta-23516",
+        "System.Linq": "4.0.1-beta-23516",
+        "System.Runtime": "4.0.21-beta-23516",
+        "System.Threading": "4.0.11-beta-23516"
+      }
+    }
+  }
+}
